@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão Fidelidade</title>
+  <link rel="stylesheet" href="styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header-logo">
+        <img src="assets/Logo.svg" alt="Member Club">
+      </div>
+    </header>
+    <div id="input-info" class="container input-wapper">
+      <input
+        id="card-input"
+        type="text"
+        placeholder="ID do cartão"
+      >
+      <button id="input-btn" class="enter-button" type="submit"> 
+        <img src="assets/buttons/ComeBackDisabled.svg"alt="Enter">
+      </button>
+    </div>
+    <div class="container dashboard">
+      <section id="history" class="client-history">
+        <aside>
+          <header class="aside-header">
+            <div class="avatar">
+              <img id="avatar" class="image" src="assets/images/default-avatar.svg" alt="Avatar">
+            </div>
+            <div id="client-info-id" class="client-info">
+              <strong id="client-name"></strong>
+              <span id="client-since"></span>
+            </div>
+          </header>
+        </aside>
+        <ul class="history">
+          <li>
+            <div class="history-header">
+              <strong>HISTÓRICO</strong>
+              <span id="cut-count">0 cortes</span>
+            </div>
+            <hr/>
+          </li>
+          <li id="history-list"></li>
+        </ul>
+      </section>
+      <section class="loyalty-card">
+        <strong>Cartão Fidelidade</strong>
+        <span>Ao fazer cortes de cabelo, o décimo sai de graça!</span>
+        <div id="card-id" class="card-id">
+          <p id="card-id-value"></p>
+        </div>
+        <div id="seal" class="container grid seal-count"></div>
+      </section>
+      <section class="container cuts-progress">
+        <p>
+          <strong id="cuts-remaining" class="cuts-count">0</strong>
+          <small>cortes restantes.</small>
+        </p>
+        <div class="progress-container">
+          <progress id="progress-id" value="" max="100" class="progress-bar"></progress>
+          <span id="cuts-needed" class="progress-label"></span>
+        </div>
+        <div id="gift-progress" class="gift-progress-container">
+          <img class="gift-img" src="assets/icons/PinGift.svg" alt="Progresso do Presente">
+        </div>
+      </section>
+    </div>
+    <script type="module" src="app/script.js"></script>
+  </main>
+</body>
+</html>
