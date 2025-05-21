@@ -1,0 +1,38 @@
+.dashboard {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem;
+  left: 20rem;
+}
+
+@media (width <= 24em) {
+  .dashboard {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    left: auto;
+    width: auto;
+    max-width: 100%;
+    padding: 0%;
+    gap: 0.5rem;
+  }
+}
+
+.dashboard > section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+@media (width <= 24em) {
+  .dashboard > section {
+    padding: 1rem 1.25rem 1rem 1.25rem;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}

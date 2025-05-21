@@ -1,0 +1,136 @@
+.aside-header {
+  display: flex;
+  background-color: var(--bs-gray-100);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 5,62rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (width <= 24em) {
+  .aside-header  {
+    width: 22rem;
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+.avatar {
+  display: inline-block;
+  padding: 0.125rem;
+  background: var(--gradient-base);
+  border-radius: 8px;
+}
+
+@media (width <= 24em) {
+  .avatar  {
+    margin-left: 0.5rem;
+  }
+}
+
+.aside-header .avatar .image {
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media (width <= 24em) {
+  .client-info  {
+    margin-left: 1rem;
+  }
+}
+
+.client-info strong {
+  color: var(--bs-gray-600);
+  font: var(--h2-sm);
+}
+
+.client-info span {
+  color: var(--bs-gray-500);
+  font: var(--text-ex);
+}
+
+hr {
+  border: none;
+  border-top: 0.06rem solid var(--bs-gray-300);
+  margin: 1rem 1rem 1rem 0;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+
+  height: 23.1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-gray-400) transparent;
+
+  font: 1rem;
+  color: var(--bs-gray-500);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: var(--bs-gray-100);
+}
+
+@media (width <= 24em) {
+  .client-history {
+    width: auto;
+    max-width: 100%;
+    padding: 0%;
+    margin: auto;
+  }
+}
+
+.history::-webkit-scrollbar {
+  width: 0.37rem;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-400);
+  border-radius: 0.25rem;
+}
+
+.history li {
+  margin-bottom: 0.75rem;
+  list-style: none;
+}
+
+.history-header{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.history-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-date {
+  font-weight: bold;
+  color: var(--bs-gray-700);
+}
+
+.history-time {
+  font-size: var(--text-xs);
+  color: var(--bs-gray-500);
+}
+
+.seal-icon {
+  width: 2rem;
+  height: 2rem;
+}
